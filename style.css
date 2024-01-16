@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Outfit:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+background: var(--cream-bg, #F2EAE2);
+display: flex;
+padding: 28px 16px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-repeat: no-repeat;
+}
+
+.product {
+width: 343px;
+height: 611px;
+border-radius: 10px;
+background-color: white;
+}
+
+.product img {
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+color: var(--Aurometal-Saurus, #6C7289);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 5px;
+margin-top: 16px;
+margin-right: 227px;
+margin-left: 24px;
+}
+
+h1 {
+color: var(--Gunmetal, #1C232B);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Fraunces;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+width: 295px;
+margin-top: 12px;
+margin-right: 24px;
+margin-left: 24px;
+}
+
+p {
+color: var(--Aurometal-Saurus, #6C7289);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 23px; 
+width: 295px;
+margin-top: 16px;
+margin-right: 24px;
+margin-left: 24px;
+}
+
+.price {
+display: flex;
+align-items: center;
+margin-top: 24px;
+margin-left: 24.5px;
+}
+
+h3 {
+color: var(--Deep-Aquamarine, #3D8168);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Fraunces;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+}
+
+span {
+color: var(--Aurometal-Saurus, #6C7289);
+font-family: Montserrat;
+font-size: 13px;
+font-weight: 500;
+line-height: 23px;
+text-decoration-line: line-through;
+margin-left: 19px;
+}
+
+button {
+width: 295px;
+height: 48px;
+border-radius: 8px;
+background: var(--Deep-Aquamarine, #3D8168);
+color: var(--Pure-White, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+margin-right: 23px;
+margin-left: 25px;
+cursor: pointer;
+}
+
+.btn img {
+width: 14.385px;
+height: 16px;
+margin-right: 11.61px;
+}
+
+.main-image-desktop {
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .product {
+        display: flex;
+        width: 600px;
+        height: 450px;
+    }
+   .main-image-mobile {
+    display: none;
+   }
+   .main-image-desktop {
+    display: block;
+    max-width: 50%;
+   }
+   h2 {
+    margin-top: 32px;
+   }
+   h1 {
+    width: 236px;
+    margin-top: 20px;
+    margin-right: 36px;
+   }
+   p {
+   width: 237px;
+   margin-top: 24px;
+   margin-right: 31.5px;
+   }
+   .price {
+    margin-top: 29px;
+    margin-right: 74px;
+   }
+  button {
+    width: 236px;
+    height: 48px;
+    margin-top: 30px;
+    margin-right: 32px;
+  }
+  .product img {
+    border-radius: 10px 0px 0px 10px;
+  }
+}
